@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>𝜗𝜚 Marsha's Website 𝜗𝜚 </title>
+</head>
+<body>
+<body style="background-color:#b99095;text-align:center;">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+      <div style="flex: 1; text-align: left;">
+        <h2>
+            <a href="homepage.html" target="main" style="color: black;">Home</a>&nbsp;&nbsp;&nbsp;  
+            <a href="aboutme.html" target="main" style="color: black;">About Me</a>&nbsp;&nbsp;&nbsp;  
+            <a href="family.html" target="main" style="color: black;">Family</a>&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html" target="main" style="color: black;">Gallery</a>&nbsp;&nbsp;&nbsp;
+            <a href="education.html" target="main" style="color: black;">Education</a>
+        </h2>
+    </div>
+    <div id="clock" style="font-size: 20px; color: white; background-color: #fcb5ac; padding: 5px 10px; border-radius: 5px; margin-left: 10px;"></div>
+</div>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+</frameset>
+</html>
